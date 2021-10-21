@@ -1,0 +1,93 @@
+#container {
+    width: 1000px;
+    background-color: gainsboro;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#left {
+    float: left;
+    width: 35%;
+    height: 600px;   
+    position: relative;
+}
+
+#right {
+    float: right;
+    width: 60%;
+    height: 600px;
+    background-color: white;
+    box-shadow: 1px 1px  2px 2px gray;
+}
+
+#footer {
+    margin: 30px 0px 0px 0px;
+    height: 160px;   
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px gray;
+    padding: 16px;
+    position: relative;
+}
+
+div > div > div {
+    background-color: white;
+}
+
+
+ul > li {
+    display: inline-block;
+    margin: 0px 8px 0px 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    text-align: center;
+
+}
+
+.explore-btn {
+    margin: 20px 0px 40px 0px;
+    color: white;
+    font-weight: 500;
+    background-color: #DD5555;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+p {
+    font-weight: 500;
+}
+
+h4, p {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: monospace;
+}
+
+.movie-card {
+    background-color: white;
+    padding: 16px;
+}
+
+#movie-card img {
+    width: 80px;
+}
+
+#movies td {
+    padding: 10px;
+}
+
+#movies {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+.icon-size {
+    font-size: 24px;
+}
