@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="root-container">
+            <h2 style="font-style: oblique; color: white; text-decoration: underline;">Survery Form</h2>
+            <div id="survey-container">
+                <h5 style="padding-top: 32px;">Let us know how we can improve freeCodeCamp</h5>
+                <div class="grid-container">
+                        <label>*Name:</label>
+                        <input type="text"/>
+                        <label>*Email:</label>
+                        <input type="email"/>
+                        <label>*Age:</label>
+                        <input type="number">   
+                        <label>Which option best describes your current role?</label>
+                        <select>
+                            <option>Student</option>
+                            <option>Teacher</option>
+                        </select>
+                        <label>How likely is it that you would recommend StackTraceCo to a friend?</label>
+                        <div id="radio-button-container">
+                            <input type="radio" id="unlikely" name="unlikely" value="unlikely">
+                            <label for="unlikely">Unlikely</label>
+                            <br/>
+                            <input type="radio" id="maybe" name="maybe" value="maybe">
+                            <label for="maybe">Maybe</label>
+                            <br/>
+                            <input type="radio" id="likely" name="likely" value="likely">
+                            <label for="louie">Likely</label>
+                            <br/>
+                        </div>
+                </div>
+            </div>
+            <p style="padding-bottom: 16px;color: white;text-decoration: underline;">Note: I used a grid-container, display: grid, the property grid-auto-columns helped a lot in terms of positioning.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+#header-container {
+    background-color: beige;
+}
+
+body {
+    width: 60%;
+    margin: auto;
+}
+
+div {
+    text-align: center;
+    padding: 24px;
+    margin: auto;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+img {
+    transition: transform .7s ease-in-out;
+}
+
+img:hover {
+    transform: rotate(720deg);
+}
