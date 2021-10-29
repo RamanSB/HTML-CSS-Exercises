@@ -2,6 +2,9 @@
     position: fixed;
     width: 20%;
     border-right: 2px solid gray;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 #sidebar > ul {
