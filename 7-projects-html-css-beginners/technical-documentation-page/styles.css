@@ -1,0 +1,48 @@
+#sidebar {
+    position: fixed;
+    width: 20%;
+    border-right: 2px solid gray;
+}
+
+#sidebar > ul {
+    list-style-type: none;
+    padding-inline-start: 8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+#sidebar > ul > li + li {
+    margin-top: 16px;
+}
+
+h1, h2, h3 { 
+    background-color: black;
+    color: white;
+    font-weight: 300;
+}
+
+#content-container {
+    padding-inline-start: 25%;
+    padding-inline-end: 10%;
+}
+
+.content-section {
+    margin-top: 20px;
+}
+
+.sub-content {
+    font-family: "Helvetica Neue";
+}
+
+
+
+.code-snippet {
+    padding: 16px;
+    background-color: lightgray;
+    color: red;
+
+}
+
+a {
+    text-decoration: none;
+}
