@@ -1,0 +1,102 @@
+
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    flex-flow: row nowrap;
+}
+
+#navbar-items {
+    display:inline-flex;
+    color: white;
+}
+
+#navbar-items > ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+#navbar-items > ul > li {
+    display: inline-block;
+    margin-right: 32px;
+    font-family: Gadget, "Courier New", "Arial Black";
+    color: gray;
+    font-size: 1.75em;
+    font-variant-caps: all-small-caps;
+}
+
+#navbar-items > ul > li:hover{
+    text-decoration: overline;
+    text-decoration-color: #4d5ea6;
+    text-decoration-thickness: 4px;
+    color: black;
+    font-weight: 700;
+}
+
+#logo {
+    display: inline-block;
+    height: inherit;
+    align-self: center;
+    object-fit: fill;
+    height: auto;
+    width: auto;
+    margin-left: 0.5em;
+}
+
+#content-image {
+    width: 100%;   
+    transition: opacity 1s ease-out;
+    opacity: 1;
+}
+
+#content-container {
+    padding: 8px;
+    position: relative;
+    display: inline-flex;
+}
+
+#content-container:hover > .overlay {
+    opacity: 1;
+}
+
+#content-container:hover > #content-image {
+    opacity: 0.2;
+}
+
+.overlay {
+    position: absolute;
+    padding: 8px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    transition: opacity 1s;
+}
+
+.overlay > h3, p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4d5ea6;
+}
+
+.overlay > h3 {
+    font-size: 2em;
+}
+
+.overlay > p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+li > a {
+    text-decoration: none;
+    text-decoration-color: none;
+}
