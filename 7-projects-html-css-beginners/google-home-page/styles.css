@@ -1,0 +1,157 @@
+#navbar {
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0px 24px 0px 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+div > ul > li {
+    display: inline-block;
+    margin-right: 24px;
+    color: #202124;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    font-weight: 400;
+}
+
+
+div > ul > li > p {
+    border: 12px solid darkred;
+    background-color: darkred;
+    color: white;
+    border-radius: 50%;
+    font-family: sans-serif, "Courier New";
+}
+
+#main-content-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 290px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 60px;
+}
+
+#search-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 32px auto 0px auto;
+}
+
+#search-input {
+    width: 560px;
+    border-radius: 18px;
+    height: 40px;
+    border: 2px solid lightgray;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0px 12px 0px 12px;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#search-buttons {
+    margin-top: 32px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 240px;
+}
+
+#search-buttons > button {
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-family: sans-serif;
+}
+
+a {
+    margin-top: 32px;
+    color: blue;
+    font-size: 0.9em;
+    font-family: arial, sans-serif;
+}
+
+#footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f2f2f2;
+}
+
+#footer-container > div {
+    padding: 0px 16px 0px 16px;
+}
+
+#locale-footer {
+    border-bottom: 1px solid #dadce0;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    max-height: 3em;
+}
+
+#locale-footer > h5 {
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+#footer-content {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 3em;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#sub-footer-start {
+    display: flex;
+    min-width: 30%;
+    justify-content: flex-start;
+    order: 1
+}
+
+#sub-footer-middle {
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub-footer-end {
+    display: flex;
+    min-width: 30%;
+    justify-content: flex-end;
+    order: 3;
+}
+
+.green-icon {
+    color: darkseagreen;
+    margin-right: 0.5em;
+}
