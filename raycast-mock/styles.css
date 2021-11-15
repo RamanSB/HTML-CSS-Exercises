@@ -1,0 +1,137 @@
+body {
+    background: black;
+}
+
+#app {
+
+}
+
+#header {
+
+}
+
+#navbar {
+    display: flex;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 20% 16px 20%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-item-center > ul {
+    padding-inline-start: 0px;
+    list-style-type: none;
+    display: inline-flex;
+    color: gainsboro;
+    font-family: Inter,"SF Pro Display",-apple-system,sans-serif;
+}
+
+.navbar-item-center > ul > li:not(:last-child)  {
+    margin: 0px 24px 0px 0px;
+}
+
+.nav-action-icon {
+    color: white;
+}
+
+.navbar-superscripts {
+    position: relative;
+    color: red;
+    top: -75%;
+    font-size: 0.75rem;
+    background: rgba(255,97,97,0.15);
+    border-radius: 4px;
+    padding: 4px;
+    font-family: Inter, "SF Pro Display",-apple-system, sans-serif;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+#angle-down-icon {
+    margin: 0 0 0 4px;
+    color: honeydew;
+}
+
+#footer {
+    display: grid;
+    padding: 0 20% 0 20%;
+    grid-gap: 0px 40px;
+}
+
+#item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+main {
+    margin-top: 132px; /* Really hate this approach of having to use margin-top to get content to show underneath fixed div (navbar) */
+    padding: 0 20% 0 20%;
+    display: block;
+    text-align: center;
+    
+}
+
+p, span, h1, h2, h5, h6 {
+    color: white;
+}
+
+.hero-title {
+    margin: 28% 0 0 0;
+    font-family: Inter, "SF Pro Display", -apple-system,sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.hero-subtitle {
+    color: #78787c;
+    font-family: Inter, "SF Pro Display", -apple-system,sans-serif;
+    margin-top: 5%;
+    font-size: 1.4rem;
+}
+
+#download-btn {
+    color: black;
+    padding: 12px 72px 12px 72px;
+    background-color: hsla(0,0%,100%,0.815);
+    font-family: Inter,SF Pro Display,-apple-system,sans-serif;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+#download-section {
+    margin: 10% 0 25% 0;
+}
+
+#brew-install {
+    font-family: Inter, SF Pro Display,-apple-system,sans-serif;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 12px 24px 12px 24px;
+    color: hsla(0,0%,100%,.6);
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+#versioning-list {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 28px auto 0 auto;
+    max-width: 25%;
+    font-family: Inter,SF Pro Display,-apple-system,sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+#versioning-list > li > span {
+    color: hsla(0,0%,100%,.6);
+}
+
