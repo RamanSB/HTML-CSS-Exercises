@@ -1,0 +1,35 @@
+
+.one {
+    width: 0px;
+    height: 0px;
+    border: 100px solid;
+    border-color: transparent transparent transparent blanchedalmond;
+    position: relative;
+    margin: 0 0 100px 0;
+}
+
+#one {
+    width: 400px;
+    height: 72px;
+    transform: translateX(60px);
+    position: relative;
+    background: black;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px 8px gainsboro;
+}
+
+#one::after {
+    content: "";
+    position: absolute;
+    border: 18px solid transparent;
+    bottom: 0;
+    left: -7.5%;
+    border-color: black transparent transparent transparent;
+    transform: translate(-40px);
+    border-radius: 0px 0px 0 0;
+    transform: rotate(90deg);
+}
+
+
+
+
