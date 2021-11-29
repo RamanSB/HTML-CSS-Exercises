@@ -319,7 +319,7 @@ p, span, h1, h2, h5, h6 {
 #super-power {
 }
 
-#super-power-headline {
+.super-power-headline {
     margin: 292px 0 0 0;
     font-family: Inter, "SF Pro Display", -apple-system,sans-serif;
     font-weight: 400;
@@ -438,4 +438,99 @@ p, span, h1, h2, h5, h6 {
     margin: 5rem 0 0 0;
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.focus-headliner {
+    margin: 48px 0 0 0;
+    display: inline;
+    font-family: Inter, "SF Pro Display", -apple-system,sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: 0.015em;
+}
+
+.grayed {
+    color: gray;
+}
+
+.focus-subheader {
+    max-width: 590px;
+    margin: 28px auto 72px auto;
+    font-family: sans-serif;
+    line-height: 1.8rem;
+    font-size: 1.4em;
+    color: #78787c;
+}
+
+.focus-grid {
+    display: grid;
+    margin: auto;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 60px;
+}
+
+#focus-grid-item-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+
+#focus-grid-item-2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#focus-grid-item-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#focus-grid-item-4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.focus-grid-item {
+    width: fit-content;
+    height: 220px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 32px 32px 48px 32px;
+    border-radius: 12px;
+    background: #101111;
+    justify-self: center;
+}
+
+.focus-grid-item > p,  h4 {
+    text-align: start;
+    font-family: sans-serif;
+}
+
+.focus-grid-item > p {
+    color: #c2c7ca;
+    max-width: 80%;
+    line-height: 1.4rem;
+    max-width: 90%;
+    letter-spacing: .024em;
+}
+
+.focus-grid-item > h4 {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    margin-bottom: 0px;
+}
+
+.seed-round-extensions-grid-container { 
+    display: grid;
 }
