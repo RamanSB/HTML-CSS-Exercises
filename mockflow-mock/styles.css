@@ -5,7 +5,8 @@
     --sectionHeaderFontWeight: 900;
     --sectionHeaderFontColor: #1d123c;
     --subtextFontSize: 18px;
-    --subtextColor: #253858;
+    --latestUpdateBackgroundColor: #f9f9f9;
+    --subtextColor: rgba(37,56,88, 0.8);
     --wireframingSectionColor: #f2f6fa;
     --gradientBtnBackground: linear-gradient(to right,#11b9ec,#7c64e6);
     --heroBlue: #00abe9;
@@ -152,14 +153,37 @@ body {
 }
 
 
-#multi-text::after {
-    content: "";
-    -webkit-animation-name: "animate-hero-text";
-    -webkit-animation-duration: 20s;
-    -webkit-animation-direction: normal;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
+#multi-text {
+    position: relative;
 }
+
+#multi-text::after {
+    content: "UI";
+    position: absolute;
+    left: 12px;
+    -webkit-animation-name: "fading-in", "animate-hero-text";
+    -webkit-animation-duration: 2s, 9.5s;
+    -webkit-animation-delay: 0s, 2s;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear, linear;
+    transition: color 0s;
+}
+
+@-webkit-keyframes fading-in {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    70% {
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 @-webkit-keyframes animate-hero-text {
     from {
@@ -167,22 +191,23 @@ body {
         color: var(--heroPurple);
     }
     25% {
-        content: "software";
-        color: var(--heroBlue)
+        content: "Software";
+        color: var(--heroBlue);
     }
     50% {
-        content: "apps";
+        content: "Apps";
         color: var(--heroPink);
     }
     75% {
-        content: "products";
-        color: var(--heroBlue)
+        content: "Products";
+        color: var(--heroBlue);
     }
-    to {
-        content: "websites";
+    100% {
+        content: "Websites";
         color: var(--heroPink);
     }
 }
+
 
 .sub-section-text {
     font-family: var(--font);
@@ -192,7 +217,7 @@ body {
     line-height: 1.33;
     font-weight: 200;
     letter-spacing: -0.5px;
-    color: #404040;
+    color: var(--subtextColor);
 }
 
 .get-started-btn {
@@ -259,6 +284,11 @@ body {
     max-width: 280px;
     font-weight: lighter;
     z-index: 1;
+}
+
+.wireframe-cards > p {
+    color: rgba(37,56,88, 0.5);
+    line-height: 1.75em;
 }
 
 .white-box-shadow {
@@ -349,4 +379,191 @@ body {
     width: 100%;
     border-radius: 12px;
     box-shadow: 1px 2px 2px 0 black;
+}
+
+#ideate-wrapper {
+    background: white;
+}
+
+#ideate-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#ideate-subtext {
+    font-family: var(--font);
+    font-size: var(--subtextFontSize);
+    font-weight: 100;
+    color: var(--subtextColor);
+    margin: 0 0 36px 0;
+}
+
+#ideate-heading {
+    position: relative;
+    font-family: var(--font);
+    font-size: var(--sectionHeaderFontSize);
+    margin: 80px 0 40px 0;
+    font-weight: bold;
+}
+
+/* #ideate-heading::after {
+    
+    content: "test";
+    background: url("./assets/integrateIcon.png");
+} */
+
+
+#ideate-container {
+    margin: 0 15% 0 15%;
+}
+
+#software-list-container {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+#software-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 90%;
+    padding-inline-start: 0px;
+    display: inline-flex;
+    list-style-type: none;
+    align-items: center;
+    transform: scale(0.9);
+    line-height: 5em;
+}
+
+#software-list > li:not(:last-child) {
+    margin-right: 64px;
+}
+
+#software-list > li:nth-child(n+6) {
+    margin-right: 10px;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+}
+
+#software-list > li:nth-child(5) {
+    transform: translateY(6px);
+}
+
+#latest-update-container {
+    margin: 0 15% 0 15%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+#latest-update-wrapper {
+    background: var(--latestUpdateBackgroundColor);
+    padding: 36px;
+}
+
+#latest-update-heading {
+    margin: 48px 0 40px 0;
+}
+
+#update-item-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-item {
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.update-item > img {
+    display: block;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+
+.item-title {
+    font-size: 1.5em;
+    font-family: var(--font);
+    max-width: 80%;
+    line-height: 1.25;
+    text-align: center;
+    display: inline-block;
+    margin: 32px 0 8px 0;
+}
+
+.item-subtext {
+    text-align: center;
+    font-family: var(--font);
+    line-height: 1.4;
+    max-width: fit-content;
+    padding: 0 32px 32px 32px;
+    color: var(--subtextColor);
+}
+
+#update-item-container > div:not(:last-child) {
+    margin: 0 48px 0 0;
+}
+
+#footer-container {
+    margin: 0 15% 0 15%;
+    display: flex;
+}
+
+#footer-logo-container {
+    flex-grow: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#footer-logo-container > img {
+    height: 15%;
+    margin: 64px 0 32px 0;
+}
+
+#footer-logo-container > p {
+    font-family: var(--font);
+    color: var(--subtextColor);
+    font-size: 0.75em;
+}
+
+#footer-icon-list {
+    padding-inline-start: 0px;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+#footer-grid {
+    display: grid;
+    flex-grow: 4;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px 24px;
+    padding: 36px 0 36px 64px;
+}
+
+#footer-grid > ul {
+    list-style-type: none;
+    height: fit-content;
+    font-family: var(--font);
+    color: var(--subtextColor);
+}
+
+#footer-grid > ul > li:nth-child(1) {
+    font-size: var(--subtextFontSize);
+    color: black;
+    margin: 0 0 16px 0;
+}
+
+#footer-grid > ul > li:not(:last-child) {
+    margin: 0 0 12px 0;
 }
